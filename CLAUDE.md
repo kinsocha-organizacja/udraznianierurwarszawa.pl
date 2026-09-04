@@ -5,7 +5,7 @@
 - **Typ**: pojedynczy statyczny landing HTML (bez frameworka, bez builda). Pliki: `index.html`, `css/style.css`, `img/`.
 - **Domena**: udrażnianierurwarszawa.pl (IDN – w systemach: `xn--udranianierurwarszawa-sse.pl`).
 - **Repo**: kinsocha/udraznianierurwarszawa.pl.
-- **Fraza docelowa**: „udrażnianie rur Warszawa" – cała strona celuje w tę jedną frazę (title: „Udrażnianie Rur Warszawa – Przepychanie Kanalizacji 24h").
+- **Fraza docelowa**: „udrażnianie rur Warszawa" – cała strona celuje w tę jedną frazę (title: „Udrażnianie Rur Warszawa – Sprężyna i WUKO, Całodobowo").
 
 ## Deploy
 
