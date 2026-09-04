@@ -28,6 +28,9 @@
       "PowerShell(del:*)",
       "PowerShell(rd:*)",
       "PowerShell(erase:*)"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\lenovo\\hydraulikwolomin.pl"
     ]
   }
 }
