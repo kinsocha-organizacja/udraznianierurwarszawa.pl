@@ -3,7 +3,7 @@
 ## O projekcie
 
 - **Typ**: pojedynczy statyczny landing HTML (bez frameworka, bez builda). Pliki: `index.html`, `css/style.css`, `img/`.
-- **Domena**: udraznianierurwarszawa.pl (bez polskich znaków, od 27.09.2026). Wcześniej strona działała na IDN udrażnianierurwarszawa.pl (`xn--udranianierurwarszawa-sse.pl`) – ta domena jest odpięta od projektu; canonical, og, schema i `.htaccess` wskazują tylko nową.
+- **Domena**: udraznianierurwarszawa.pl (bez polskich znaków, od 27.09.2026). Wcześniej strona działała na IDN udrażnianierurwarszawa.pl (`xn--udranianierurwarszawa-sse.pl`) – ta domena jest odpięta od projektu i ma zostać usunięta z serwera (decyzja właściciela 27.09.2026, bez przekierowania 301); canonical, og, schema i `.htaccess` wskazują tylko nową.
 - **Repo**: kinsocha/udraznianierurwarszawa.pl.
 - **Fraza docelowa**: „udrażnianie rur Warszawa" – cała strona celuje w tę jedną frazę (title: „Udrażnianie Rur Warszawa – Sprężyna i WUKO, Całodobowo").
 
