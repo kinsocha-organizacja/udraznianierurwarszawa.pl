@@ -2,10 +2,14 @@ Options -Indexes
 
 RewriteEngine On
 
-# 301: www -> bez www (domena IDN w formie punycode)
-RewriteCond %{HTTP_HOST} ^www\.xn--udranianierurwarszawa-sse\.pl$ [NC]
-RewriteRule ^(.*)$ https://xn--udranianierurwarszawa-sse.pl/$1 [R=301,L]
+# 301: www -> bez www
+RewriteCond %{HTTP_HOST} ^www\.udraznianierurwarszawa\.pl$ [NC]
+RewriteRule ^(.*)$ https://udraznianierurwarszawa.pl/$1 [R=301,L]
 
 # 301: http -> https
 RewriteCond %{HTTPS} !=on
-RewriteRule ^(.*)$ https://xn--udranianierurwarszawa-sse.pl/$1 [R=301,L]
+RewriteRule ^(.*)$ https://udraznianierurwarszawa.pl/$1 [R=301,L]
+
+# 301: /index.html -> /
+RewriteCond %{THE_REQUEST} \s/+index\.html[?\s] [NC]
+RewriteRule ^index\.html$ / [R=301,L]

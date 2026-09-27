@@ -1,15 +1,15 @@
-# udrażnianierurwarszawa.pl – instrukcja projektu
+# udraznianierurwarszawa.pl – instrukcja projektu
 
 ## O projekcie
 
 - **Typ**: pojedynczy statyczny landing HTML (bez frameworka, bez builda). Pliki: `index.html`, `css/style.css`, `img/`.
-- **Domena**: udrażnianierurwarszawa.pl (IDN – w systemach: `xn--udranianierurwarszawa-sse.pl`).
+- **Domena**: udraznianierurwarszawa.pl (bez polskich znaków, od 27.09.2026). Wcześniej strona działała na IDN udrażnianierurwarszawa.pl (`xn--udranianierurwarszawa-sse.pl`) – ta domena jest odpięta od projektu; canonical, og, schema i `.htaccess` wskazują tylko nową.
 - **Repo**: kinsocha/udraznianierurwarszawa.pl.
 - **Fraza docelowa**: „udrażnianie rur Warszawa" – cała strona celuje w tę jedną frazę (title: „Udrażnianie Rur Warszawa – Sprężyna i WUKO, Całodobowo").
 
 ## Deploy
 
-- **Automatyczny** – jak w udraznianiekanalizacji.eu: po `git push` na main workflow `.github/workflows/deploy.yml` wysyła wszystkie pliki repo przez FTP na h50.seohost.pl (włączone ponownie 09.08.2026). Sekrety `REMOTE_USER` i `REMOTE_PASSWORD` w ustawieniach repo na GitHubie.
+- **Automatyczny** – jak w udraznianiekanalizacji.eu: po `git push` na main workflow `.github/workflows/deploy.yml` wysyła wszystkie pliki repo przez FTP na h50.seohost.pl (włączone ponownie 09.08.2026). Sekrety `REMOTE_USER` (`githubudraznianierurwarszawa@udraznianierurwarszawa.pl`, konto FTP ze ścieżką `/domains/udraznianierurwarszawa.pl/public_html/`) i `REMOTE_PASSWORD` w ustawieniach repo na GitHubie. Workflow wysyła do katalogu głównego konta FTP (nie dopisuje `public_html/`), więc konto musi wskazywać prosto na `public_html`.
 - Workflow NIE wysyła: `.git`, `.github`, `.claude`, `CLAUDE.md`, `.gitignore`, `deploy-lokalny.ps1`, `ftp-haslo.txt`. Nowy plik konfiguracyjny (nieprzeznaczony na serwer) dopisać do wykluczeń w `deploy.yml`.
 - `deploy-lokalny.ps1` = tylko ścieżka awaryjna (ręczny wysył 4 plików wpisanych na sztywno; hasło w `ftp-haslo.txt`, którego nie ma w repo). Normalnie nieużywany.
 
